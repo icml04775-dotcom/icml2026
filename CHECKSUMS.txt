@@ -1,0 +1,2 @@
+e122736bc9491fb5b99ce110a98b709709ea69820e2ca6f64f3e7a3f8b5ffe47  weights/model_checkpoint.ckpt
+27f32414b3e6772da2edf1cbce279d4134210a917cf9da6e3f73b5da0e29d674  data/sample_image.tif
