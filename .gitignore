@@ -36,6 +36,7 @@ ENV/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+__marimo__
 # Marimo
 .marimo_cache/
 

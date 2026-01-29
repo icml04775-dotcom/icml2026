@@ -138,13 +138,30 @@ device = "cuda:0"        # Device (use "cpu" for CPU inference)
 **Size**: 7.5 GB  
 **Format**: PyTorch Lightning checkpoint (`.ckpt`)
 
-**Note for Paper Submission**: Due to size constraints, we recommend hosting the checkpoint separately:
-- **Zenodo**: Free DOI-based hosting for academic datasets
-- **Figshare**: Academic data repository
-- **Google Drive**: Quick sharing option
-- **Institutional Repository**: Check with your institution
+### Downloading the Model
 
-Update the checkpoint URL in the README after hosting.
+Due to the large file size, the trained model checkpoint is hosted separately on Google Drive:
+
+**Download Link**: [https://drive.google.com/drive/folders/1i4p00D9TnOWFr99ujOJp4JW7h_qNYD-D?usp=sharing](https://drive.google.com/drive/folders/1i4p00D9TnOWFr99ujOJp4JW7h_qNYD-D?usp=sharing)
+
+### Installation Steps
+
+1. Download the `model_checkpoint.ckpt` file from the Google Drive link above
+2. Place the downloaded file in the `weights/` directory:
+   ```bash
+   # Create the weights directory if it doesn't exist
+   mkdir -p weights/
+   
+   # Move the downloaded checkpoint to the correct location
+   mv ~/Downloads/model_checkpoint.ckpt weights/
+   ```
+3. Verify the file is in the correct location:
+   ```bash
+   ls -lh weights/model_checkpoint.ckpt
+   # Should show: weights/model_checkpoint.ckpt (~7.5 GB)
+   ```
+
+The notebook will automatically load the model from `weights/model_checkpoint.ckpt`.
 
 ## Troubleshooting
 
@@ -165,35 +182,6 @@ Update the checkpoint URL in the README after hosting.
 ### Marimo not opening
 - Check if port 8080 is available
 - Try: `marimo edit sae_explore.py --port 8081`
-
-## Citation
-
-If you use this code or model in your research, please cite:
-
-```bibtex
-@article{YourPaper2026,
-  title={Your Paper Title},
-  author={Your Name and Co-authors},
-  journal={Conference/Journal Name},
-  year={2026}
-}
-```
-
-## License
-
-This code is released under [LICENSE_TYPE]. See LICENSE file for details.
-
-## Acknowledgments
-
-- **DINOv3**: Meta AI Research
-- **Sparse Autoencoders**: Anthropic's interpretability research
-- **Marimo**: Interactive notebook framework
-
-## Contact
-
-For questions or issues, please contact:
-- **Email**: [your.email@institution.edu]
-- **GitHub**: [Your GitHub username]
 
 ---
 
