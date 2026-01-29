@@ -4,7 +4,7 @@
 
 This supplementary package contains code for exploring learned features in a Sparse Autoencoder (SAE) integrated with a DINOv3-based segmentation model for aerial imagery. The interactive notebook demonstrates feature visualization, class-specific activation patterns, and feature steering capabilities.
 
-## 📁 Package Contents
+## Package Contents
 
 ```
 supplementary/
@@ -27,7 +27,7 @@ supplementary/
 └── outputs/                       # Output directory (created on run)
 ```
 
-## 🔧 Installation
+## Installation
 
 ### Prerequisites
 
@@ -60,7 +60,7 @@ supplementary/
    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
    ```
 
-## 🚀 Usage
+## Usage
 
 ### Running the Interactive Notebook
 
@@ -96,7 +96,7 @@ marimo run sae_explore.py
    - Global steering: Propagate changes to similar regions
 6. **Decoder Manipulation**: Directly modify SAE decoder weights
 
-## 🎯 Key Capabilities
+## Key Capabilities
 
 ### 1. Feature Visualization
 Examine which sparse features activate for different land cover classes (e.g., trees, roads, buildings).
@@ -112,7 +112,7 @@ Compute aggregated feature activation patterns for each class to understand clas
 ### 4. Global Propagation
 Find all image patches similar to a selected region and apply the same steering intervention.
 
-## 📊 Model Architecture
+## Model Architecture
 
 - **Backbone**: DINOv3-Large (ViT-L/14) pre-trained on aerial imagery
 - **SAE**: TopK Sparse Autoencoder with 65,536 dictionary features
@@ -121,7 +121,7 @@ Find all image patches similar to a selected region and apply the same steering 
 - **Decoder**: Dense Prediction Transformer (DPT) head
 - **Classes**: 9 land cover classes (bareland, rangeland, tree, water, etc.)
 
-## ⚙️ Configuration
+## Configuration
 
 Key parameters can be modified in the configuration cell of `sae_explore.py`:
 
@@ -133,12 +133,12 @@ patch_size = 16          # ViT patch size
 device = "cuda:0"        # Device (use "cpu" for CPU inference)
 ```
 
-## 📦 Model Weights
+## Model Weights
 
 **Size**: 7.5 GB  
 **Format**: PyTorch Lightning checkpoint (`.ckpt`)
 
-⚠️ **Note for Paper Submission**: Due to size constraints, we recommend hosting the checkpoint separately:
+**Note for Paper Submission**: Due to size constraints, we recommend hosting the checkpoint separately:
 - **Zenodo**: Free DOI-based hosting for academic datasets
 - **Figshare**: Academic data repository
 - **Google Drive**: Quick sharing option
@@ -146,7 +146,7 @@ device = "cuda:0"        # Device (use "cpu" for CPU inference)
 
 Update the checkpoint URL in the README after hosting.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Out of Memory (OOM) Errors
 - Reduce `img_size` to 512 or 256
@@ -166,7 +166,7 @@ Update the checkpoint URL in the README after hosting.
 - Check if port 8080 is available
 - Try: `marimo edit sae_explore.py --port 8081`
 
-## 📖 Citation
+## Citation
 
 If you use this code or model in your research, please cite:
 
@@ -179,17 +179,17 @@ If you use this code or model in your research, please cite:
 }
 ```
 
-## 📄 License
+## License
 
 This code is released under [LICENSE_TYPE]. See LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **DINOv3**: Meta AI Research
 - **Sparse Autoencoders**: Anthropic's interpretability research
 - **Marimo**: Interactive notebook framework
 
-## 📧 Contact
+## Contact
 
 For questions or issues, please contact:
 - **Email**: [your.email@institution.edu]

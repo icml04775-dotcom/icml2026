@@ -1,6 +1,6 @@
 # Supplementary Materials Package - Summary
 
-## ✅ Package Created Successfully
+## Package Created Successfully
 
 **Location**: `/home/prod-gpu-3/Documents/th/train_segmentation/supplementary/`  
 **Total Size**: ~7.5 GB  
@@ -8,7 +8,7 @@
 
 ---
 
-## 📦 What's Included
+## What's Included
 
 ### 1. **Interactive Notebook**
 - `sae_explore.py` - Marimo notebook with all analysis code
@@ -40,20 +40,20 @@
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
 The notebook demonstrates:
-1. ✅ **Model Loading & Inference** - Load checkpoint and run predictions
-2. ✅ **Sparse Feature Extraction** - Extract TopK SAE features
-3. ✅ **Class Profile Analysis** - Compute class-specific feature patterns
-4. ✅ **Feature Visualization** - Visualize feature activations per class
-5. ✅ **Local Steering** - Modify features in selected regions
-6. ✅ **Global Propagation** - Apply edits to similar regions
-7. ✅ **Decoder Manipulation** - Direct SAE decoder modification
+1. **Model Loading & Inference** - Load checkpoint and run predictions
+2. **Sparse Feature Extraction** - Extract TopK SAE features
+3. **Class Profile Analysis** - Compute class-specific feature patterns
+4. **Feature Visualization** - Visualize feature activations per class
+5. **Local Steering** - Modify features in selected regions
+6. **Global Propagation** - Apply edits to similar regions
+7. **Decoder Manipulation** - Direct SAE decoder modification
 
 ---
 
-## 📊 Package Statistics
+## Package Statistics
 
 ```
 Total Size:        ~7.5 GB
@@ -88,7 +88,7 @@ supplementary/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Navigate to supplementary folder
@@ -106,11 +106,11 @@ marimo edit sae_explore.py
 
 ---
 
-## ⚠️ Important Notes for Paper Submission
+## Important Notes for Paper Submission
 
 ### 1. **Large File Hosting**
 The checkpoint file (7.5 GB) exceeds most journal submission limits. Consider:
-- **Zenodo** (free, DOI-based, academic) ✅ Recommended
+- **Zenodo** (free, DOI-based, academic) - Recommended
 - **Figshare** (free, academic repository)
 - **Google Drive** (quick sharing)
 - **Institutional repository**
@@ -165,7 +165,7 @@ tar -czf supplementary_materials_code_only.tar.gz \
 
 ---
 
-## 📝 Checklist for Submission
+## Checklist for Submission
 
 - [ ] Test package in clean Python environment
 - [ ] Upload checkpoint to permanent hosting (Zenodo/Figshare)
@@ -179,7 +179,7 @@ tar -czf supplementary_materials_code_only.tar.gz \
 
 ---
 
-## 🔧 Customization Options
+## Customization Options
 
 ### For Different Papers/Datasets
 
@@ -201,7 +201,7 @@ device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 ---
 
-## 🐛 Known Limitations
+## Known Limitations
 
 1. **GPU Memory**: Requires ~16GB GPU RAM for full resolution (1024×1024)
    - Workaround: Reduce `img_size` to 512 or 256
@@ -217,7 +217,7 @@ device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 ---
 
-## 📧 Support Information
+## Support Information
 
 Update README.md with:
 - Your contact email
@@ -227,10 +227,10 @@ Update README.md with:
 
 ---
 
-## ✅ Validation Results
+## Validation Results
 
 ```
-Package validation: PASSED ✓
+Package validation: PASSED
 - All required files present
 - Model code complete (42 files)
 - Checkpoint available (7.5 GB)
@@ -242,7 +242,7 @@ Package validation: PASSED ✓
 
 ---
 
-## 🎓 Citation Template
+## Citation Template
 
 Add to README.md after publication:
 
@@ -258,5 +258,5 @@ Add to README.md after publication:
 ---
 
 **Package Created**: January 29, 2026  
-**Validated**: ✅ All checks passed  
+**Validated**: All checks passed  
 **Status**: Ready for paper submission
