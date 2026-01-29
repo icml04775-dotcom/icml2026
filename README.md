@@ -142,7 +142,7 @@ device = "cuda:0"        # Device (use "cpu" for CPU inference)
 
 Due to the large file size, the trained model checkpoint is hosted separately on Google Drive:
 
-**Download Link**: [https://drive.google.com/drive/folders/1i4p00D9TnOWFr99ujOJp4JW7h_qNYD-D?usp=sharing](https://drive.google.com/drive/folders/1i4p00D9TnOWFr99ujOJp4JW7h_qNYD-D?usp=sharing)
+**Download Link**: [https://huggingface.co/mldatauser/sae_icml/tree/main](https://huggingface.co/mldatauser/sae_icml/tree/main)
 
 ### Installation Steps
 
