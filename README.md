@@ -144,6 +144,11 @@ Due to the large file size, the trained model checkpoint is hosted separately on
 
 **Download Link**: [https://huggingface.co/mldatauser/sae_icml/tree/main](https://huggingface.co/mldatauser/sae_icml/tree/main)
 
+Use hf CLI
+```
+hf download mldatauser/sae_icml model_checkpoint.ckpt --local-dir weights/
+```
+
 ### Installation Steps
 
 1. Download the `model_checkpoint.ckpt` file from the Google Drive link above
